@@ -1,6 +1,7 @@
 FROM nginx:stable-alpine@sha256:d2c11a1e63f200585d8225996fd666436277a54e8c0ba728fa9afff28f075bd7
 
 ENV API_URL=http://localhost:8080
+ENV SWAGGER_PORT=3000
 
 # Remove default Nginx configuration.
 RUN rm /etc/nginx/conf.d/default.conf

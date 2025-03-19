@@ -1,5 +1,5 @@
 server {
-    listen 3000;
+    listen ${SWAGGER_PORT};
 
     # Serve Swagger UI static files.
     location / {

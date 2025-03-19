@@ -25,6 +25,8 @@ docker run --rm --network=host \
 --name proxy-swagger sebodockerhub/proxy-swagger
 ````
 
+and surf to <http://localhost:3000>.
+
 adapting `${PWD}/openapi.yaml` as needed.
 
 ## ENV
@@ -48,6 +50,18 @@ Or targeting a remote service (https://httpbin.org):
 docker run --rm --network=host \
 -v ${PWD}/openapi.yaml:/usr/share/nginx/html/openapi.yaml:ro \
 -e "API_URL=https://httpbin.org" \
+--name proxy-swagger sebodockerhub/proxy-swagger
+````
+
+### SWAGGER_PORT
+
+One may override the proxy- / Swagger-port by setting the `SWAGGER_PORT`
+environment variable (default `3000`). For example, using port `4711`:
+
+````sh
+docker run --rm --network=host \
+-v ${PWD}/openapi.yaml:/usr/share/nginx/html/openapi.yaml:ro \
+-e "SWAGGER_PORT=4711" \
 --name proxy-swagger sebodockerhub/proxy-swagger
 ````
 
