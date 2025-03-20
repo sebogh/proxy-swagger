@@ -29,6 +29,10 @@ and surf to <http://localhost:3000>.
 
 adapting `${PWD}/openapi.yaml` as needed.
 
+## dockerhub
+
+<https://hub.docker.com/repository/docker/sebodockerhub/proxy-swagger/general>
+
 ## ENV
 
 ### API_URL
