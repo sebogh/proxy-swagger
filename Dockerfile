@@ -1,4 +1,4 @@
-FROM nginx@sha256:b05aceb5ec1844435cae920267ff9949887df5b88f70e11d8b2871651a596612
+FROM nginx:stable-alpine-slim@sha256:a00b591ab482fcfcc4a971a5efd04ebdbb6f9fe8ffe95dec9009019b8c0582e8
 
 ENV API_URL=http://localhost:8080
 ENV SWAGGER_PORT=3000
