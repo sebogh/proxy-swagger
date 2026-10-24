@@ -18,6 +18,9 @@ COPY nginx-default.conf.template /etc/nginx/conf.d/default.conf.template
 # Copy Custom entry point.
 COPY docker-entrypoint.sh /
 
+# Copy version file.
+COPY version /
+
 # Set entrypoint and command.
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
