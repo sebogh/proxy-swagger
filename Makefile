@@ -1,5 +1,5 @@
 VERSION := $(shell cat version)
-SWAGGER_VERSION := v5.20.1
+SWAGGER_VERSION := v5.34.0
 
 .PHONY: build
 build: swagger
